@@ -1,0 +1,9 @@
+.my-header {
+  color: white;
+  background: teal;
+}
+
+.my-header h1 {
+  margin: 0 auto;
+  padding: 0.67em;
+}

@@ -1,0 +1,21 @@
+.my-card {
+  width: 30%;
+  margin: 12px auto;
+  border: slategray 1px solid;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.image-area {
+  height: 30vw;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subtext {
+  align-self: flex-end;
+}

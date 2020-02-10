@@ -1,0 +1,8 @@
+.my-gallery {
+  padding: 12px;
+}
+
+.three-view {
+  display: flex;
+  flex-flow: row wrap;
+}
