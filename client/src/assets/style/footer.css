@@ -1,0 +1,20 @@
+footer {
+  background: darkgray;
+  display: flex;
+  flex-flow: row;
+  height: 70px;
+}
+
+.spacer {
+  width: -webkit-fill-available;
+}
+
+.item {
+  margin: 0 25px;
+  align-self: center;
+}
+
+.made-by {
+  text-align: end;
+  width: -webkit-fill-available;
+}
