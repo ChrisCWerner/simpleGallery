@@ -34,7 +34,7 @@ export default class Slider extends React.Component {
           <button className="button left" onClick={this.goLeft}>
             &lt;
           </button>
-          <span className="index">{index}</span>
+          <span className="index">{index + 1}</span>
           <button className="button right" onClick={this.goRight}>
             &gt;
           </button>
