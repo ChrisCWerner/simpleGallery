@@ -2,7 +2,11 @@
   padding: 12px;
 }
 
-.three-view {
+.grid-view {
   display: flex;
   flex-flow: row wrap;
+}
+
+button {
+  cursor: pointer;
 }
