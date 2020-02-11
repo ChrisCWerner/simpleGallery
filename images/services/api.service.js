@@ -15,7 +15,11 @@ module.exports = {
 			whitelist: [
 				// Access to any actions in all services under "/api" URL
 				"**"
-			]
+			],
+			cors: {
+				origin: ["http://localhost:2000"],
+				methods: ["GET"]
+			}
 		}],
 
 		// Serve assets from "public" folder
