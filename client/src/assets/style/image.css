@@ -29,3 +29,7 @@
   width: 100%;
   cursor: default;
 }
+
+.subtext {
+  padding: 2px 6px;
+}

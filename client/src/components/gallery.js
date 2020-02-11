@@ -13,10 +13,14 @@ export default class Gallery extends React.Component {
 
   componentDidMount() {
     api.image.getImages()
-      .then(images => {
-        console.log(images)
-        return this.setState({ images })
-      })
+      .then(images => this.setState({ images }))
+  }
+
+  loadMore = () => {
+    api.image.getImages()
+      .then(images => this.setState({
+        images: this.state.images.concat(images)
+      }))
   }
 
   View = () => {
@@ -27,7 +31,10 @@ export default class Gallery extends React.Component {
           {this.state.images.map((img, index) => {
             return <Image onClick={() => this.goToImage(index)} key={index} src={img.src} alt={img.alt} text={img.text} />
           })}
-        </div>
+          <button onClick={this.loadMore} style={{ margin: "0 auto" }}>
+            load more!
+          </button>
+        </div >
       )
     else return (
       <div>
@@ -49,7 +56,7 @@ export default class Gallery extends React.Component {
 
   render = () => (
     <main className="my-gallery">
-      <div style={{ textAlign: "end" }}>
+      <div style={{ textAlign: "end", marginBottom: 8 }}>
         <button onClick={() => this.changeView("grid")}>Grid view</button>
         <button onClick={() => this.changeView("slider")}>Slider view</button>
       </div>

@@ -9,4 +9,13 @@
 
 button {
   cursor: pointer;
+  border: none;
+  margin: 4px;
+  padding: 6px 10px;
+  background-color: #497282;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
