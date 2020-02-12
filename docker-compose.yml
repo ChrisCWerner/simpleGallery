@@ -4,7 +4,7 @@ services:
   api:
     build:
       context: .
-    image: images
+    image: images-api
     container_name: images-api
     env_file: docker-compose.env
     environment:
