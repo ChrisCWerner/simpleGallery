@@ -23,7 +23,7 @@ services:
 
   image:
     build:
-      context: .
+      context: ./images/
     image: images
     container_name: images-image
     env_file: docker-compose.env
