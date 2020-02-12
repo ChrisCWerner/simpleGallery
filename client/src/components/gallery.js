@@ -31,6 +31,7 @@ export default class Gallery extends React.Component {
           {this.state.images.map((img, index) => {
             return <Image onClick={() => this.goToImage(index)} key={index} src={img.src} alt={img.alt} text={img.text} />
           })}
+          <div style={{ flexBasis: "100%", height: 0 }} />
           <button onClick={this.loadMore} style={{ margin: "0 auto" }}>
             load more!
           </button>
